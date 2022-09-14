@@ -1,0 +1,98 @@
+
+body {
+    width: 100%;
+    height: 930px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 32px;
+    background-image: url("/assets/img/Fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    background-color: #121214;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background-image: linear-gradient(to right, #9572FC, #43E7AD, #43E7AD);
+    border-radius: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar__img {
+    width: 110px;
+    height: 110px;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.jogos {
+    margin-top: 32px;
+}
+
+.jogos__card-border {
+    width: fit-content;
+    height: 284px;
+    background-image: linear-gradient(to right, #9572FC, #43E7AD, #43E7AD);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.jogos__card {
+    width: 580px;
+    height: fit-content;
+    background-color: #2A2634;
+    padding: 24px 32px 32px 32px;
+    gap: 24px;
+    border-radius: 8px;
+}
+
+h2 {
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 38.4px;
+    letter-spacing: -0.47px;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: #A1A1AA;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: -0.18px;
+    height: 26px;
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    width: 302px;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin-top: 24px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.img-jogo {
+    width: 90px;
+    height: 120px;
+    border-radius: 8px;
+}
