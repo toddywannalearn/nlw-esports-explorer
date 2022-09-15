@@ -1,10 +1,10 @@
 //variables
-$var_font_family: "Inter", sans-serif;
-$var_heading2_color: #ffffff;
-$var_paragraph_color: #a1a1aa;
-$var_card_background_color: #2a2634;
-$var_body_background_color: #121214;
-$var_border_gradiente_color: linear-gradient(
+$font-family: "Inter", sans-serif;
+$heading2-color: #ffffff;
+$paragraph-color: #a1a1aa;
+$card-background-color: #2a2634;
+$body-background-color: #121214;
+$border-gradient-color: linear-gradient(
   to right,
   #9572fc,
   #43e7ad,
@@ -35,7 +35,7 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 100% auto;
-  background-color: $var_body_background_color;
+  background-color: $body-background-color;
 }
 
 main {
@@ -66,7 +66,7 @@ header div {
   @extend .avatar;
   width: fit-content;
   padding: 4px;
-  background-image: $var_border_gradiente_color;
+  background-image: $border-gradient-color;
   display: flex;
   transition: transform 0.3s;
 
@@ -104,7 +104,7 @@ section ul li {
 }
 
 .content {
-  background-image: $var_border_gradiente_color;
+  background-image: $border-gradient-color;
   border-radius: 10px;
 }
 
@@ -112,15 +112,15 @@ section ul li {
   position: relative;
   top: 5px;
   height: fit-content;
-  background-color: $var_card_background_color;
+  background-color: $card-background-color;
   padding: 24px 32px 32px 32px;
   gap: 24px;
   border-radius: 8px;
 }
 
 section h2 {
-  color: $var_heading2_color;
-  font-family: $var_font_family;
+  color: $heading2-color;
+  font-family: $font-family;
   font-weight: 900;
   font-size: 24px;
   line-height: 38.4px;
@@ -128,8 +128,8 @@ section h2 {
 }
 
 section p {
-  color: $var_paragraph_color;
-  font-family: $var_font_family;
+  color: $paragraph-color;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: -0.18px;
