@@ -1,98 +1,125 @@
+//variables
+$var_font_family: 'Inter', sans-serif;
+$var_heading2_color: #FFFFFF;
+$var_paragraph_color: #A1A1AA;
+$var_card_background_color: #2A2634;
+$var_body_background_color: #121214;
+$var_border_gradiente_color: linear-gradient(to right, #9572FC, #43E7AD, #43E7AD);
+
+// reset das margens e espaçamentos default
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// main * {
+//     border: 1px solid red;
+// }
 
 body {
+    @extend .column;
     width: 100%;
-    height: 930px;
-    display: flex;
-    flex-direction: column;
+    height: max-content;
     justify-content: flex-start;
     align-items: center;
     padding-top: 32px;
+    padding-bottom: 44px;
     background-image: url("/assets/img/Fundo.jpg");
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    background-color: #121214;
+    background-position: top center;
+    background-size: 100% auto;
+    background-color: $var_body_background_color;
+}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    display: grid;
+    gap: 24px;
+    margin-top: 32px;
 }
 
 .avatar {
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.avatar__border {
+    @extend .avatar;
     width: 120px;
     height: 120px;
-    background-image: linear-gradient(to right, #9572FC, #43E7AD, #43E7AD);
-    border-radius: 100px;
+    background-image: $var_border_gradiente_color;
     display: inline-flex;
     justify-content: center;
     align-items: center;
 }
 
-.avatar__img {
+.avatar__img--profile {
+    @extend .avatar;
     width: 110px;
     height: 110px;
-    border-radius: 100px;
-    box-sizing: border-box;
 }
 
-.jogos {
-    margin-top: 32px;
+.avatar__img--streamer {
+    @extend .avatar;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #443E54;
 }
 
-.jogos__card-border {
-    width: fit-content;
-    height: 284px;
-    background-image: linear-gradient(to right, #9572FC, #43E7AD, #43E7AD);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
+.content {
+    background-image: $var_border_gradiente_color;
+    border-radius: 10px;
 }
 
-.jogos__card {
-    width: 580px;
+.content__card {
+    position: relative;
+    top: 5px;
     height: fit-content;
-    background-color: #2A2634;
+    background-color: $var_card_background_color;
     padding: 24px 32px 32px 32px;
     gap: 24px;
     border-radius: 8px;
 }
 
-h2 {
-    color: white;
-    font-family: 'Inter', sans-serif;
+section h2 {
+    color: $var_heading2_color;
+    font-family: $var_font_family;
     font-weight: 900;
     font-size: 24px;
     line-height: 38.4px;
     letter-spacing: -0.47px;
-    padding: 0;
-    margin: 0;
 }
 
-p {
-    color: #A1A1AA;
-    font-family: 'Inter', sans-serif;
+section p {
+    color: $var_paragraph_color;
+    font-family: $var_font_family;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.18px;
     height: 26px;
-    padding: 0;
-    margin: 0;
 }
 
-ul {
-    width: 302px;
-    height: 120px;
+section ul {
+    @extend .row;
+    gap: 16px;
+    margin-top: 24px;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.games-list img {
+    width: 90px;
+    border-radius: 8px;
+}
+
+.row {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0;
-    margin-top: 24px;
 }
 
-li {
-    list-style-type: none;
-}
-
-.img-jogo {
-    width: 90px;
-    height: 120px;
-    border-radius: 8px;
+.column {
+    display: flex;
+    flex-direction: column;
 }
