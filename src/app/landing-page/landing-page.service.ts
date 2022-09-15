@@ -10,24 +10,16 @@ export interface IImageInfo {
   providedIn: 'root',
 })
 export class LandingPageService {
-  gamesList: IImageInfo[] = [];
-  streamersList: IImageInfo[] = [];
+  imageList: IImageInfo[] = [];
 
   constructor() {}
 
-  setGamesList(list: IImageInfo[]) {
-    this.gamesList = list;
+  setImageList(list: IImageInfo[]) {
+    this.imageList = list;
   }
 
-  getGamesList(): IImageInfo[]{
-    return this.gamesList;
+  getImageList(): IImageInfo[]{
+    return this.imageList;
   }
 
-  setStreamersList(list: IImageInfo[]) {
-    this.streamersList = list;
-  }
-
-  getStreamersList(): IImageInfo[]{
-    return this.streamersList;
-  }
 }

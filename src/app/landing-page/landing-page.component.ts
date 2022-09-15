@@ -19,7 +19,7 @@ export class LandingPageComponent implements OnInit {
   }
 
   setGamesList() {
-    this.landingPageService.setGamesList(
+    this.landingPageService.setImageList(
       [
         {
           alt: 'league of legends game image',
@@ -40,11 +40,11 @@ export class LandingPageComponent implements OnInit {
       ]
     );
 
-    this.gamesList = this.landingPageService.getGamesList();
+    this.gamesList = this.landingPageService.getImageList();
   }
 
   setStreamersList() {
-    this.landingPageService.setStreamersList(
+    this.landingPageService.setImageList(
       [
         {
           alt: 'alazonka streamer photo',
@@ -69,7 +69,7 @@ export class LandingPageComponent implements OnInit {
       ]
     );
 
-    this.streamersList = this.landingPageService.getStreamersList();
+    this.streamersList = this.landingPageService.getImageList();
   }
 
 
