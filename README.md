@@ -6,8 +6,6 @@
 
 Project created during the event "Next Level Week" that was promoted by RocketSeat.
 
->[Click here to access !](https://toddywannalearn.github.io/nlw-esports-explorer/)
-
 ## Technologies
 
 - Angular
