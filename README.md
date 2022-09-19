@@ -1,9 +1,28 @@
-# NlwEsportsExplorer
+# NLW eSports Explorer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.
+![preview](src/assets/img/preview.png)
 
-![image](https://user-images.githubusercontent.com/28987549/190320758-274b943c-ecf6-4567-9738-027ea38beb32.png)
+> Path: Explorer
 
+Project created during the event "Next Level Week" that was promoted by RocketSeat.
+
+>[Click here to access !](https://toddywannalearn.github.io/nlw-esports-explorer/)
+
+## Technologies
+
+- Angular
+- HTML
+- CSS (SASS - BEM)
+- Typescrypt
+- Git/Github
+
+## Contact
+
+douglasshilt@gmail.com
+
+<br>
+
+**This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.4.**
 
 ## Development server
 
